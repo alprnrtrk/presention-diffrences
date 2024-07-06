@@ -1,0 +1,703 @@
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Penta Yazılım Sunum  | Giriş</title>
+    <link rel="shortcut icon" href="assets/image/icon/logo.svg" type="image/x-icon" />
+    <script type="module" src="assets/script/script.js"></script>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/utils.css">
+</head>
+
+<body class="select-none">
+<main class="relative w-screen h-screen overflow-hidden [--whiteSpace:50px_60px] p-[--whiteSpace]">
+    <section class="pointer-events-none hover:opacity-100 duration-450 fixed z-[999] top-0 left-0 w-full h-full flex items-end justify-between p-[30px_60px]">
+        <div nav-logo class="pointer-events-auto p-[30px] bg-white/5 backdrop-blur-xl border border-solid border-white/10 rounded-xl duration-450">
+            <img class="w-[150px]" src="assets/image/trademark/logo.png" alt="">
+        </div>
+        <div class="pointer-events-auto flex bg-white/5 backdrop-blur-xl border border-solid border-white/10 rounded-xl p-[20px]">
+            <div nav-prev class="active flex items-center justify-center w-0 [&.active]:mx-[10px] [&.active]:w-[30px] overflow-hidden opacity-50 hover:opacity-100 duration-450">
+                <svg class="rotate-180 w-[15px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg>
+            </div>
+            <div nav-next class="active flex items-center justify-center w-0 [&.active]:mx-[10px] [&.active]:w-[30px] overflow-hidden opacity-50 hover:opacity-100 duration-450">
+                <svg class="w-[15px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg>
+            </div>
+            <button nav-reset class="flex items-center justify-center w-0 [&.active]:mx-[10px] [&.active]:w-[30px] overflow-hidden opacity-50 hover:opacity-100 duration-450">
+                <svg class="w-[20px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M463.5 224H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5z" />
+                </svg>
+            </button>
+        </div>
+    </section>    <div id="effectWrapper" class="fixed z-[10] top-0 left-0 w-full h-full pointer-events-none">
+        <div id="boxes" class="absolute z-[1] w-full h-full opacity-10 [--lineColor:white] [--bgSizeW:77px] [--bgSizeH:47px] [background-image:linear-gradient(var(--lineColor)_1px,transparent_1px),linear-gradient(to_right,var(--lineColor)_1px,transparent_1px)] [background-size:var(--bgSizeW)_var(--bgSizeH)]"></div>
+        <div id="lights" class="absolute z-[2] w-full h-full">
+            <img id="leftLight" class="opacity-75 absolute top-1/2 left-[-50px] -translate-y-1/2 -translate-x-1/2 w-[1000px]" src="assets/image/effects/light.png" alt="">
+            <img id="rightLight" class="opacity-75 absolute bottom-1/2 right-[-50px] translate-y-1/2 translate-x-1/2 w-[1000px]" src="assets/image/effects/light.png" alt="">
+            <img id="dimLight" class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2" src="assets/image/effects/light-dim.png" alt="">
+        </div>
+        <div id="effect" class="absolute z-[3] w-full h-full">
+            <img class="w-full h-full object-cover object-center" src="assets/image/effects/effect-1.png" alt="just effect images">
+        </div>
+    </div>    <section id="title" class="relative z-[200] [--gap:50px] w-full h-auto p-[20px_30px] flex justify-between items-center gap-[--gap] bg-white/5 rounded-[26px] border border-solid border-white/20 backdrop-blur-[12.60px] duration-1000 ease-manidar">
+        <h1 class="overflow-hidden text-4xl font-medium text-white/70 duration-450">
+            <span class="block w-max text-nowrap">
+    
+            </span>
+        </h1>
+        <span class="w-[calc(100%-var(--aviableWidth)-var(--gap)*2)] h-[2px] flex ml-auto bg-white/10 duration-450"></span>
+        <h2 class="relative overflow-hidden w-[4rem] h-[4rem] flex items-center"></h2>
+    </section>    <section id="pre-loader" class="absolute pointer-events-none z-[9999] top-0 left-0 w-full h-full flex items-center justify-center bg-black duration-1000">
+        <svg class="w-[200px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 50">
+            <g class="header-logo-icon fill-white">
+                <path d="M6.68,0C2.99,0,0,2.98,0,6.67v43.33h47.81c3.69,0,6.68-2.98,6.68-6.67V0H6.68ZM49.86,45.38H4.63V4.62h45.23v40.76Z"></path>
+                <path d="M14.22,23.58h31.83V7.71H8.28v34.75h5.94v-18.89ZM41.64,12.68v5.94H14.22v-5.94h27.42Z"></path>
+                <path class="header-logo-icon-y transform-flat transform-fill !origin-center [--header-logo-icon-rotate:0deg] [transform:perspective(300px)_rotateY(var(--header-logo-icon-rotate))_translateZ(0)]" d="M38.99,25.56l-8.48,7.25-7.09-6.98h-7.67l15.72,16.67,8.84-.05-6.02-5.93,11.77-10.97h-7.07Z" style="--header-logo-icon-rotate: 0deg;"></path>
+            </g>
+        </svg>
+    </section>    <section popup-id="wordpress" class="[&.active]:pointer-events-auto [&.active]:opacity-100 pointer-events-none opacity-0 flex items-center justify-center fixed z-[999] top-0 left-0 w-full h-full bg-black/50 backdrop-blur-xl p-[--whiteSpace]">
+        <div class="relative flex items-center justify-center w-[1200px] h-[600px] bg-white rounded-xl">
+            <button close-pop="wordpress" class="group absolute flex items-center justify-center top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50px] h-[50px] rounded-full bg-black border-solid border border-white text-white">
+                <svg class="group-hover:rotate-90 duration-450 fill-white w-[20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </button>
+            <div class="w-full h-full p-[20px] rounded-xl overflow-hidden">
+                <video autoplay muted loop class="w-full h-full object-cover object-center" src="assets/video/penta.mp4"></video>
+            </div>
+        </div>
+    </section>    <section popup-id="laravel" class="[&.active]:pointer-events-auto [&.active]:opacity-100 pointer-events-none opacity-0 flex items-center justify-center fixed z-[999] top-0 left-0 w-full h-full bg-black/50 backdrop-blur-xl p-[--whiteSpace]">
+        <div class="relative flex items-center justify-center w-[1200px] h-[600px] bg-white rounded-xl">
+            <button close-pop="laravel" class="group absolute flex items-center justify-center top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50px] h-[50px] rounded-full bg-black border-solid border border-white text-white">
+                <svg class="group-hover:rotate-90 duration-450 fill-white w-[20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </button>
+            <div class="w-full h-full p-[20px] rounded-xl overflow-hidden">
+                <video autoplay muted loop class="w-full h-full object-cover object-center" src="assets/video/penta.mp4"></video>
+            </div>
+        </div>
+    </section>
+    <page page="0" pageName="" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450">
+        <div class="absolute top-0 left-0 w-full h-full grid grid-cols-2 items-center px-[120px]">
+            <img class="w-[450px]" src="assets/image/trademark/logo.png" alt="">
+            <div class="flex flex-col gap-[20px] text-white/75">
+                <h5 class="flex gap-[10px] text-[20px] font-extralight"><strong class="text-white">20+</strong>Yıllık Sektörel Deneyimimiz ile,</h5>
+                <h3 class="text-[60px] leading-[70px] text-white">Hayal Ettiğiniz Ne Varsa Şimdi Gerçeğe Dönüşüyor</h3>
+            </div>
+        </div>
+    </page>    <page page="1" pageName="Toplantımızın Amacı" class="group/wrapper absolute top-0 left-0 z-[100] w-screen h-screen flex items-center justify-center p-[--whiteSpace] m-[--whiteSpace] mx-0 mb-0 duration-450">
+        <ul class="flex flex-wrap justify-center gap-[40px]">
+            <li class="opacity-0 translate-y-2 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 group w-[calc(100%/3-40px)] flex flex-col gap-[20px] p-[35px] rounded-[30px] bg-[linear-gradient(180deg,rgba(23,114,153,0.20)0%,rgba(23,114,153,0.08)100%)] backdrop-blur-[30px] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:border before:border-solid before:border-transparent before:rounded-[30px] before:duration-450 hover:before:border-white/20 hover:before:w-[calc(100%+30px)] hover:before:h-[calc(100%+30px)] duration-450" style="transition-delay: 1.0s;">
+                <span class="[--borderSize:5px] opacity-0 group-hover:opacity-100 absolute overflow-hidden z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[calc(100%+var(--borderSize))] h-[calc(100%+var(--borderSize))] rounded-[30px] border-solid [border-width:var(--borderSize)] border-white duration-450 [mask-image:linear-gradient(180deg,rgba(23,114,153,0.20)_0%,rgba(23,114,153,0.08)_100%)]"></span>
+                <div class="flex items-center justify-start gap-[20px]">
+                    <div class="min-w-[50px] min-h-[50px] max-w-[50px] max-h-[50px] flex items-center justify-center p-[10px] bg-white/5 rounded-full backdrop-blur-xl">
+                        <img class="w-full h-full ml-[5px]" src="assets/image/icon/papers.svg" alt="">
+                    </div>
+                    <h2 class="text-[24px] 2xl:text-[19px] text-white/70 group-hover:text-white duration-450">Sizi ve Firmanızı Daha Yakından Tanımak</h2>
+                </div>
+                <p class="text-[20px] 2xl:text-[16px] text-white/50 group-hover:text-white/70 duration-450">Faaliyet alanınızı, hedeflerinizi ve mevcut stratejilerinizi anlamak, daha etkili bir işbirliği yapmamıza olanak tanıyacaktır.</p>
+            </li>
+            <li class="opacity-0 translate-y-2 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 group w-[calc(100%/3-40px)] flex flex-col gap-[20px] p-[35px] rounded-[30px] bg-[linear-gradient(180deg,rgba(23,114,153,0.20)0%,rgba(23,114,153,0.08)100%)] backdrop-blur-[30px] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:border before:border-solid before:border-transparent before:rounded-[30px] before:duration-450 hover:before:border-white/20 hover:before:w-[calc(100%+30px)] hover:before:h-[calc(100%+30px)] duration-450" style="transition-delay: 1.2s;">
+                <span class="[--borderSize:5px] opacity-0 group-hover:opacity-100 absolute overflow-hidden z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[calc(100%+var(--borderSize))] h-[calc(100%+var(--borderSize))] rounded-[30px] border-solid [border-width:var(--borderSize)] border-white duration-450 [mask-image:linear-gradient(180deg,rgba(23,114,153,0.20)_0%,rgba(23,114,153,0.08)_100%)]"></span>
+                <div class="flex items-center justify-start gap-[20px]">
+                    <div class="min-w-[50px] min-h-[50px] max-w-[50px] max-h-[50px] flex items-center justify-center p-[10px] bg-white/5 rounded-full backdrop-blur-xl">
+                        <img class="w-full h-full ml-[5px]" src="assets/image/icon/papers.svg" alt="">
+                    </div>
+                    <h2 class="text-[24px] 2xl:text-[19px] text-white/70 group-hover:text-white duration-450">Potansiyel Müşterilerinizin Kimler Olduğunu Anlamak</h2>
+                </div>
+                <p class="text-[20px] 2xl:text-[16px] text-white/50 group-hover:text-white/70 duration-450">İşinizin başarısında kilit rol oynayan potansiyel müşterilerinizin kim olduğunu ve onların beklentilerini anlamak, stratejilerimizi doğru şekillendirmemize yardımcı olacaktır.</p>
+            </li>
+            <li class="opacity-0 translate-y-2 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 group w-[calc(100%/3-40px)] flex flex-col gap-[20px] p-[35px] rounded-[30px] bg-[linear-gradient(180deg,rgba(23,114,153,0.20)0%,rgba(23,114,153,0.08)100%)] backdrop-blur-[30px] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:border before:border-solid before:border-transparent before:rounded-[30px] before:duration-450 hover:before:border-white/20 hover:before:w-[calc(100%+30px)] hover:before:h-[calc(100%+30px)] duration-450" style="transition-delay: 1.4s;">
+                <span class="[--borderSize:5px] opacity-0 group-hover:opacity-100 absolute overflow-hidden z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[calc(100%+var(--borderSize))] h-[calc(100%+var(--borderSize))] rounded-[30px] border-solid [border-width:var(--borderSize)] border-white duration-450 [mask-image:linear-gradient(180deg,rgba(23,114,153,0.20)_0%,rgba(23,114,153,0.08)_100%)]"></span>
+                <div class="flex items-center justify-start gap-[20px]">
+                    <div class="min-w-[50px] min-h-[50px] max-w-[50px] max-h-[50px] flex items-center justify-center p-[10px] bg-white/5 rounded-full backdrop-blur-xl">
+                        <img class="w-full h-full ml-[5px]" src="assets/image/icon/papers.svg" alt="">
+                    </div>
+                    <h2 class="text-[24px] 2xl:text-[19px] text-white/70 group-hover:text-white duration-450">Müşteri Yolculuğunuzu Keşfetmek</h2>
+                </div>
+                <p class="text-[20px] 2xl:text-[16px] text-white/50 group-hover:text-white/70 duration-450">Müşterilerinizin markanızla olan etkileşim süreçlerini analiz etmek istiyoruz. Bu sayede, müşteri deneyimini en iyi şekilde optimize edebiliriz.</p>
+            </li>
+            <li class="opacity-0 translate-y-2 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 group w-[calc(100%/3-40px)] flex flex-col gap-[20px] p-[35px] rounded-[30px] bg-[linear-gradient(180deg,rgba(23,114,153,0.20)0%,rgba(23,114,153,0.08)100%)] backdrop-blur-[30px] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:border before:border-solid before:border-transparent before:rounded-[30px] before:duration-450 hover:before:border-white/20 hover:before:w-[calc(100%+30px)] hover:before:h-[calc(100%+30px)] duration-450" style="transition-delay: 1.6s;">
+                <span class="[--borderSize:5px] opacity-0 group-hover:opacity-100 absolute overflow-hidden z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[calc(100%+var(--borderSize))] h-[calc(100%+var(--borderSize))] rounded-[30px] border-solid [border-width:var(--borderSize)] border-white duration-450 [mask-image:linear-gradient(180deg,rgba(23,114,153,0.20)_0%,rgba(23,114,153,0.08)_100%)]"></span>
+                <div class="flex items-center justify-start gap-[20px]">
+                    <div class="min-w-[50px] min-h-[50px] max-w-[50px] max-h-[50px] flex items-center justify-center p-[10px] bg-white/5 rounded-full backdrop-blur-xl">
+                        <img class="w-full h-full ml-[5px]" src="assets/image/icon/papers.svg" alt="">
+                    </div>
+                    <h2 class="text-[24px] 2xl:text-[19px] text-white/70 group-hover:text-white duration-450">Markanızı Rakiplerinizden Ayıran Özellikleri Belirlemek</h2>
+                </div>
+                <p class="text-[20px] 2xl:text-[16px] text-white/50 group-hover:text-white/70 duration-450">Firmanız için en uygun yaklaşımı belirlemek üzere, markalaşma ve performans arasındaki dengeyi doğru bir şekilde kurmak. Hedeflerinize ulaşmak için en etkili yöntemi birlikte seçmek.</p>
+            </li>
+            <li class="opacity-0 translate-y-2 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 group w-[calc(100%/3-40px)] flex flex-col gap-[20px] p-[35px] rounded-[30px] bg-[linear-gradient(180deg,rgba(23,114,153,0.20)0%,rgba(23,114,153,0.08)100%)] backdrop-blur-[30px] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:border before:border-solid before:border-transparent before:rounded-[30px] before:duration-450 hover:before:border-white/20 hover:before:w-[calc(100%+30px)] hover:before:h-[calc(100%+30px)] duration-450" style="transition-delay: 1.8s;">
+                <span class="[--borderSize:5px] opacity-0 group-hover:opacity-100 absolute overflow-hidden z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[calc(100%+var(--borderSize))] h-[calc(100%+var(--borderSize))] rounded-[30px] border-solid [border-width:var(--borderSize)] border-white duration-450 [mask-image:linear-gradient(180deg,rgba(23,114,153,0.20)_0%,rgba(23,114,153,0.08)_100%)]"></span>
+                <div class="flex items-center justify-start gap-[20px]">
+                    <div class="min-w-[50px] min-h-[50px] max-w-[50px] max-h-[50px] flex items-center justify-center p-[10px] bg-white/5 rounded-full backdrop-blur-xl">
+                        <img class="w-full h-full ml-[5px]" src="assets/image/icon/papers.svg" alt="">
+                    </div>
+                    <h2 class="text-[24px] 2xl:text-[19px] text-white/70 group-hover:text-white duration-450">Branding Mi, Performans Mı?</h2>
+                </div>
+                <p class="text-[20px] 2xl:text-[16px] text-white/50 group-hover:text-white/70 duration-450">Firmanız için en uygun yaklaşımı belirlemek üzere, markalaşma ve performans arasındaki dengeyi doğru bir şekilde kurmak. Hedeflerinize ulaşmak için en etkili yöntemi birlikte seçmek.</p>
+            </li>
+        </ul>
+    </page>    <page page="2" pageName="Penta Yazılım Hakkında" class="group/wrapper absolute top-0 left-0 z-[100] w-screen h-screen flex items-center justify-center p-[--whiteSpace] m-[--whiteSpace] mx-0 mb-0 duration-450">
+        <div class="translate-y-[-30px] w-full grid grid-cols-2 gap-[100px] px-[60px]">
+            <h2 class="group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 translate-y-2 opacity-0 [&_strong]:font-medium text-[90px] gradientAnimation !bg-clip-text !text-transparent duration-1000 ease-manidar">
+                <strong>Bizim için</strong> <br>
+                <strong class="text-white">Güven'i</strong> <br>
+                <strong>tasarlamak</strong> <br>
+                <strong>daha değerli</strong> <br>
+            </h2>
+            <div class="flex flex-col gap-[50px] justify-center text-xl text-white">
+                <p class="text-2xl 2xl:text-base group-[&.active]/wrapper:opacity-100 opacity-0 leading-[30px] text-white/50 duration-450" style="transition-delay: 1s;"><strong class="text-white">20 yılı aşkın sektörel deneyimi ile web tasarım, yazılım</strong> <br> geliştirme ve marka stratejileri oluşturma gibi hizmetlerimizle, müşterilerimizin iş süreçlerini optimize etmeyi ve rekabet güçlerini artırmayı hedefliyoruz.</p>
+                <div class="flex flex-col gap-[10px]">
+                    <h3 class="opacity-0 translate-y-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-y-0 text-3xl 2xl:text-2xl text-white/50 duration-450" style="transition-delay: 1.2s;">Slogan:</h3>
+                    <p class="opacity-0 -translate-x-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-x-0 duration-450 text-5xl 2xl:text-4xl" style="transition-delay: 1.8s;">Daima Yanınızdayız:</p>
+                </div>
+                <div class="flex flex-col gap-[10px]">
+                    <h3 class="opacity-0 translate-y-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-y-0 text-3xl 2xl:text-2xl text-white/50 duration-450" style="transition-delay: 1.4s;">Gelecek Hedefleri:</h3>
+                    <p class="opacity-0 -translate-x-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-x-0 duration-450 text-5xl 2xl:text-4xl" style="transition-delay: 2s;">Global Pazar’da Liderlik</p>
+                </div>
+                <div class="flex flex-col gap-[10px]">
+                    <h3 class="opacity-0 translate-y-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-y-0 text-3xl 2xl:text-2xl text-white/50 duration-450" style="transition-delay: 1.6s;">Kuruluş:</h3>
+                    <p class="opacity-0 -translate-x-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-x-0 duration-450 text-5xl 2xl:text-4xl" style="transition-delay: 2.2s;">2002</p>
+                </div>
+            </div>
+        </div>
+    </page>    <page page="3" pageName="Dünya Çapında Penta Yazılım" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450">
+        <div class="translate-x-[10%] translate-y-[7%] group-[&.active]/wrapper:scale-100 group-[&.active]/wrapper:opacity-100 scale-90 opacity-0 relative w-full h-full top-0 right-0 duration-1000" style="transition-delay: 1s;">
+            <video class="absolute top-0 left-0 w-full h-full object-cover [mask-image:radial-gradient(20%_30%_at_50.02%_34.08%,rgba(0,0,0,.5)_0%,rgba(0,0,0,0)_150%)]" autoplay muted loop src="assets/video/world.mp4"></video>
+            <span class="absolute top-0 left-0 w-full h-full mix-blend-overlay bg-[linear-gradient(127deg,rgba(23,114,153,0.50)_37.94%,rgba(108,53,178,0.50)_51.89%)] [mask-image:radial-gradient(20%_30%_at_50.02%_34.08%,rgba(0,0,0,.5)_0%,rgba(0,0,0,0)_150%)]"></span>
+            <div class="absolute z-[50] top-0 left-0 w-full h-full">
+                <div pin="en" x="45" y="30" class="opacity-30 [&.active]:opacity-100 group/pin absolute w-[20px] h-[20px] rounded-full border-solid [&.active]:border-[3px] border-[2px] border-[#5F676B] bg-white duration-450 before:absolute before:z-[-1] before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:w-[30px] before:h-[30px] [&.active]:before:w-[50px] [&.active]:before:h-[50px] before:bg-white/50 before:rounded-full before:duration-450 after:opacity-0 [&.active]:after:opacity-100 after:absolute after:z-[-1] after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:h-[80px] after:w-[80px] after:bg-white/25 after:rounded-full after:duration-450">
+                    <div class="z-[99] -translate-y-3 group-[&.active]/pin:translate-y-[40px] opacity-0 group-[&.active]/pin:opacity-100 absolute pointer-events-none top-full left-1/2 -translate-x-1/2 flex items-center gap-[10px] pr-[30px] p-[10px_20px] bg-white/5 border-solid border border-white/50 rounded-full backdrop-blur-[30px] duration-450">
+                        <img class="w-[13px]" src="assets/image/icon/pin.svg" alt="">
+                        <span class="text-nowrap text-white">
+                            at position 16
+                        </span>
+                    </div>
+                </div>
+                <div pin="de" x="49" y="38" class="opacity-30 [&.active]:opacity-100 group/pin absolute w-[20px] h-[20px] rounded-full border-solid [&.active]:border-[3px] border-[2px] border-[#5F676B] bg-white duration-450 before:absolute before:z-[-1] before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:w-[30px] before:h-[30px] [&.active]:before:w-[50px] [&.active]:before:h-[50px] before:bg-white/50 before:rounded-full before:duration-450 after:opacity-0 [&.active]:after:opacity-100 after:absolute after:z-[-1] after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:h-[80px] after:w-[80px] after:bg-white/25 after:rounded-full after:duration-450">
+                    <div class="z-[99] -translate-y-3 group-[&.active]/pin:translate-y-[40px] opacity-0 group-[&.active]/pin:opacity-100 absolute pointer-events-none top-full left-1/2 -translate-x-1/2 flex items-center gap-[10px] pr-[30px] p-[10px_20px] bg-white/5 border-solid border border-white/50 rounded-full backdrop-blur-[30px] duration-450">
+                        <img class="w-[13px]" src="assets/image/icon/pin.svg" alt="">
+                        <span class="text-nowrap text-white">
+                            at position 16
+                        </span>
+                    </div>
+                </div>
+                <div pin="tr" x="55" y="40" class="opacity-30 [&.active]:opacity-100 group/pin absolute w-[20px] h-[20px] rounded-full border-solid [&.active]:border-[3px] border-[2px] border-[#5F676B] bg-white duration-450 before:absolute before:z-[-1] before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:w-[30px] before:h-[30px] [&.active]:before:w-[50px] [&.active]:before:h-[50px] before:bg-white/50 before:rounded-full before:duration-450 after:opacity-0 [&.active]:after:opacity-100 after:absolute after:z-[-1] after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:h-[80px] after:w-[80px] after:bg-white/25 after:rounded-full after:duration-450">
+                    <div class="z-[99] -translate-y-3 group-[&.active]/pin:translate-y-[40px] opacity-0 group-[&.active]/pin:opacity-100 absolute pointer-events-none top-full left-1/2 -translate-x-1/2 flex items-center gap-[10px] pr-[30px] p-[10px_20px] bg-white/5 border-solid border border-white/50 rounded-full backdrop-blur-[30px] duration-450">
+                        <img class="w-[13px]" src="assets/image/icon/pin.svg" alt="">
+                        <span class="text-nowrap text-white">
+                            at position 16
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div titleFix class="pointer-events-none group-[&.active]/wrapper:translate-x-0 -translate-x-3 group-[&.active]/wrapper:opacity-100 opacity-0 absolute z-[10] text-white w-full h-full grid grid-cols-2 p-[--whiteSpace] m-[--whiteSpace] mb-0 duration-450 delay-1000">
+            <div goto="4" class="pointer-events-auto flex flex-col justify-center items-start gap-[50px] mx-[60px]">
+                <p class="leading-10 text-2xl 2xl:text-xl font-light text-white/70">
+                    Web tasarımı, bireylerin veya kuruluşların mal ve hizmetlerini <br>
+                    <strong class="text-white"> internette tanıtmaları için tasarlanmış bir yazılımdır.</strong>
+                </p>
+                <ul class="w-full grid grid-cols-2 gap-[70px]">
+                    <li class="flex gap-[15px] group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 opacity-0 translate-y-2 duration-450" style="transition-delay: 1.2s;">
+                        <h3 class="text-[90px] leading-none">
+                            +3
+                        </h3>
+                        <h4 class="text-lg 2xl:text-base w-[100px] mt-auto mb-[5px] text-white/50">
+                            3 Ülke de Şubelerimiz
+                        </h4>
+                    </li>
+                    <li class="flex gap-[15px] group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 opacity-0 translate-y-2 duration-450" style="transition-delay: 1.3s;">
+                        <h3 class="text-[90px] leading-none">
+                            +50
+                        </h3>
+                        <h4 class="text-lg 2xl:text-base w-[100px] mt-auto mb-[5px] text-white/50">
+                            Profesyonel Ekip
+                        </h4>
+                    </li>
+                    <li class="flex gap-[15px] group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 opacity-0 translate-y-2 duration-450" style="transition-delay: 1.4s;">
+                        <h3 class="text-[90px] leading-none">
+                            +1k
+                        </h3>
+                        <h4 class="text-lg 2xl:text-base w-[100px] mt-auto mb-[5px] text-white/50">
+                            Web Tasarım &amp; Yazılım
+                        </h4>
+                    </li>
+                    <li class="flex gap-[15px] group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 opacity-0 translate-y-2 duration-450" style="transition-delay: 1.5s;">
+                        <h3 class="text-[90px] leading-none">
+                            +320
+                        </h3>
+                        <h4 class="text-lg 2xl:text-base w-[100px] mt-auto mb-[5px] text-white/50">
+                            Mutlu Müşteri
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </page>    <page page="4" pageName="Bir Yazılım Firmasından Fazlası" class="group/wrapper absolute z-[100] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450 delay-450 bg-transparent mix-blend-lighten">
+        <h3 class="group-[&.active]/wrapper:opacity-0 group-[&.active]/wrapper:-translate-y-full absolute top-0 left-0 w-full h-full flex items-center justify-center gap-[20px] text-5xl font-light text-white/50 duration-[2s] delay-[2s] ease-moon">Dijital Çözümler <strong class="text-white">Tek Bir Noktada!</strong></h3>
+        <div class="pointer-events-none group-[&.active]/wrapper:translate-y-0 opacity-50 absolute z-[1] top-0 left-0 w-full h-full flex items-center justify-center translate-y-full duration-[2s] delay-[2s]">
+            <h3 class="translate-y-[-80px] translate-x-[80px] scale-125 2xl:ml-0 2xl:scale-100 text-[350px] bg-clip-text text-transparent bg-[radial-gradient(70%_70%_at_50%_90%,rgba(255,255,255,0.22)_0%,rgba(0,0,0,.3)_96.02%)]" style="-webkit-text-fill-color: transparent; -webkit-text-stroke: 2px rgba(255,255,255,.05);">360°</h3>
+        </div>
+        <div class="pointer-events-none group-[&.active]/wrapper:translate-y-0 absolute top-0 left-0 translate-y-full w-full h-full flex items-center justify-center duration-[2s] delay-[2s] ease-moon">
+            <div class="relative w-[170px] h-[170px] 2xl:w-[130px] 2xl:h-[130px] rounded-full overflow-hidden">
+                <img class="w-full h-full" src="assets/image/other/moon.gif" alt="">
+                <span class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-white/30 to-transparent"></span>
+            </div>
+            <div class="absolute pointer-events-auto bottom-0 left-1/2 -translate-x-1/2 w-[1100px] 2xl:w-[800px] h-[450px] 2xl:h-[300px]">
+                <img class="relative z-0 w-full h-full" src="assets/image/other/lines.png" alt="">
+                <div class="absolute z-1 top-0 left-0 w-full h-full grid grid-cols-2 place-items-center">
+                    <div mask-image="-30" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[10px] translate-y-[-70px] delay-[4s]">
+                        Dijital Pazarlama
+                    </div>
+                    <div mask-image="30" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[10px] translate-y-[-70px] delay-[4.1s]">
+                        Web Hizmetleri
+                    </div>
+                    <div mask-image="-40" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[-150px] translate-y-[-80px] delay-[4.2s]">
+                        Grafik Tasarım
+                    </div>
+                    <div mask-image="40" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[150px] translate-y-[-80px] delay-[4.3s]">
+                        Diğer Hizmetler
+                    </div>
+                    <div mask-image="-70" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[50px] translate-y-[-100px] delay-[4.4s]">
+                        Markalama
+                    </div>
+                    <div mask-image="70" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2] top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[-50px] translate-y-[-100px] delay-[4.5s]">
+                        Prodüksiyon
+                    </div>
+                </div>
+            </div>
+        </div>
+    </page>    <page page="5" pageName="Konsept Web Tasarım Süreci" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 !pb-0 duration-450 p-[--whiteSpace]">
+        <div titleFix class="scale-110 2xl:scale-100 absolute top-full group-[&.active]/wrapper:top-0 duration-1000 delay-1000 left-0 w-full h-full flex flex-col items-center justify-center gap-[50px] px-[120px]">
+            <div class="absolute bottom-1/3 2xl:bottom-1/4 w-[1200px]">
+                <div class="absolute top-[-15px] left-0 w-full h-full flex justify-between items-center">
+                    <button trigger="1" indicator="0.0" class="group relative [&.active]:w-[30px] [&.active]:h-[30px] [&.active]:text-white [&.active]:opacity-100 duration-1000 w-[15px] h-[15px] opacity-20 text-transparent bg-[#3C43DD] rounded-full border border-solid border-white/10">
+                        <span>1</span>
+                        <div reset-delay="2000" class="duration-1000 top-0 group-[&.active]/wrapper:top-[-120px] absolute left-1/2 -translate-y-full -translate-x-1/2 w-max h-max flex flex-col gap-3 items-center justify-center group-[&.active]:bg-white/5 border-solid border border-transparent group-[&.active]:border-white/10 rounded-xl p-[10px_40px]" style="transition-delay: 1.5s;">
+                            <span class="absolute z-[-1] bottom-0 left-1/2 -translate-x-1/2 w-[1px] h-full translate-y-full bg-transparent group-[&.active]:bg-white/10"></span>
+                            <img class="w-[35px] p-[5px] bg-white/10 rounded-full" src="assets/image/icon/world.png" alt="">
+                            <h3 class="text-2xl text-white">Tasarım Bildirim <br> Formu</h3>
+                        </div>
+                    </button>
+                    <button trigger="2" indicator="0.25" class="group relative [&.active]:w-[30px] [&.active]:h-[30px] [&.active]:text-white [&.active]:opacity-100 duration-1000 w-[15px] h-[15px] opacity-20 text-transparent bg-[#3C43DD] rounded-full border border-solid border-white/10">
+                        <span>2</span>
+                        <div reset-delay="2000" class="duration-1000 top-0 group-[&.active]/wrapper:top-[-100px] absolute left-1/2 -translate-y-full -translate-x-1/2 w-max h-max flex flex-col gap-3 items-center justify-center group-[&.active]:bg-white/5 border-solid border border-transparent group-[&.active]:border-white/10 rounded-xl p-[10px_40px]" style="transition-delay: 1.6s;">
+                            <span class="absolute z-[-1] bottom-0 left-1/2 -translate-x-1/2 w-[1px] h-[calc(100%)] translate-y-full bg-transparent group-[&.active]:bg-white/10"></span>
+                            <img class="w-[35px] p-[5px] bg-white/10 rounded-full" src="assets/image/icon/world.png" alt="">
+                            <h3 class="text-2xl text-white">Arayüz Tasarım <br> İstasyonu</h3>
+                        </div>
+                    </button>
+                    <button trigger="3" indicator="0.50" class="group relative [&.active]:w-[30px] [&.active]:h-[30px] [&.active]:text-white [&.active]:opacity-100 duration-1000 w-[15px] h-[15px] opacity-20 text-transparent bg-[#3C43DD] rounded-full border border-solid border-white/10">
+                        <span>3</span>
+                        <div reset-delay="2000" class="duration-1000 top-0 group-[&.active]/wrapper:top-[-120px] absolute left-1/2 -translate-y-full -translate-x-1/2 w-max h-max flex flex-col gap-3 items-center justify-center group-[&.active]:bg-white/5 border-solid border border-transparent group-[&.active]:border-white/10 rounded-xl p-[10px_40px]" style="transition-delay: 1.7s;">
+                            <span class="absolute z-[-1] bottom-0 left-1/2 -translate-x-1/2 w-[1px] h-full translate-y-full bg-transparent group-[&.active]:bg-white/10"></span>
+                            <img class="w-[35px] p-[5px] bg-white/10 rounded-full" src="assets/image/icon/world.png" alt="">
+                            <h3 class="text-2xl text-white">Front-End Kodlama <br> İstasyonu</h3>
+                        </div>
+                    </button>
+                    <button trigger="4" indicator="0.75" class="group relative [&.active]:w-[30px] [&.active]:h-[30px] [&.active]:text-white [&.active]:opacity-100 duration-1000 w-[15px] h-[15px] opacity-20 text-transparent bg-[#3C43DD] rounded-full border border-solid border-white/10">
+                        <span>4</span>
+                        <div reset-delay="2000" class="duration-1000 top-0 group-[&.active]/wrapper:top-[-100px] absolute left-1/2 -translate-y-full -translate-x-1/2 w-max h-max flex flex-col gap-3 items-center justify-center group-[&.active]:bg-white/5 border-solid border border-transparent group-[&.active]:border-white/10 rounded-xl p-[10px_40px]" style="transition-delay: 1.8s;">
+                            <span class="absolute z-[-1] bottom-0 left-1/2 -translate-x-1/2 w-[1px] h-[calc(100%)] translate-y-full bg-transparent group-[&.active]:bg-white/10"></span>
+                            <img class="w-[35px] p-[5px] bg-white/10 rounded-full" src="assets/image/icon/world.png" alt="">
+                            <h3 class="text-2xl text-white">Back-End Kodlama <br> İstasyonu</h3>
+                        </div>
+                    </button>
+                    <button trigger="5" indicator="1" class="group relative [&.active]:w-[30px] [&.active]:h-[30px] [&.active]:text-white [&.active]:opacity-100 duration-1000 w-[15px] h-[15px] opacity-20 text-transparent bg-[#3C43DD] rounded-full border border-solid border-white/10">
+                        <span>5</span>
+                        <div reset-delay="2000" class="duration-1000 top-0 group-[&.active]/wrapper:top-[-120px] absolute left-1/2 -translate-y-full -translate-x-1/2 w-max h-max flex flex-col gap-3 items-center justify-center group-[&.active]:bg-white/5 border-solid border border-transparent group-[&.active]:border-white/10 rounded-xl p-[10px_40px]" style="transition-delay: 1.9s;">
+                            <span class="absolute z-[-1] bottom-0 left-1/2 -translate-x-1/2 w-[1px] h-full translate-y-full bg-transparent group-[&.active]:bg-white/10"></span>
+                            <img class="w-[35px] p-[5px] bg-white/10 rounded-full" src="assets/image/icon/world.png" alt="">
+                            <h3 class="text-2xl text-white">Test ve Yayına Alma</h3>
+                        </div>
+                    </button>
+                </div>
+                <svg class="w-full" width="1459" height="39" viewBox="0 0 1459 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1.75345L136.724 33.1062C167.235 40.1542 199.018 39.5184 229.222 31.2558L315.495 7.6553C348.173 -1.28402 382.652 -1.28403 415.331 7.65529L497.702 30.1884C530.38 39.1277 564.859 39.1277 597.537 30.1884L679.908 7.6553C712.586 -1.28402 747.065 -1.28403 779.744 7.6553L862.114 30.1884C894.793 39.1277 929.272 39.1277 961.95 30.1884L1044.32 7.6553C1077 -1.28402 1111.48 -1.28403 1144.16 7.6553L1230.43 31.2558C1260.63 39.5184 1292.42 40.1542 1322.93 33.1061L1458.65 1.75345" stroke="url(#paint0_linear_393_384)" stroke-width="0.896595" />
+                    <defs>
+                        <linearGradient id="paint0_linear_393_384" x1="1" y1="19.4556" x2="1458.65" y2="19.4556" gradientUnits="userSpaceOnUse">
+                            <stop pagination-indicator offset="0" stop-color="#5C39C0" />
+                            <stop pagination-indicator offset="0" stop-color="#2B1B5A" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </page>    <page page="6" pageName="Tasarım Bildirim Formu" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 !pb-0 duration-450 p-[--whiteSpace]">
+        <div titleFix class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-end gap-[50px] px-[120px]">
+            <div class="ease-manidar relative -top-full group-[&.active]/wrapper:top-0 duration-[2s] delay-1000 text-4xl 2xl:text-[30px] text-white/50 font-light">
+                Projelere giden yolda, <strong class="text-white font-medium">detaylar bizim için önemli...</strong>
+            </div>
+            <div class="ease-manidar relative bottom-0 translate-y-full group-[&.active]/wrapper:translate-y-0 duration-1000 delay-[1.5s]">
+                <a target="_blank" href="https://destek.pentayazilim.com/tasarim-bildirim-formu/mZDNCOTwvAqOI8Fm">
+                    <img class="w-[1000px] h-[600px]" src="assets/image/other/screen-2.png" alt="">
+                </a>
+            </div>
+            <div titleFix class="absolute pointer-events-none top-0 left-0 w-full h-full">
+                <div class="scale-90 absolute bottom-[-300px] left-[50px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[15%]" style="transition-delay: 1s;">
+                    <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 0s;" src="assets/image/other/buble.png" alt="">
+                    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">test yazusu</span>
+                </div>
+                <div class="absolute bottom-[-300px] left-[270px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[9%]" style="transition-delay: 1s;">
+                    <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 0s;" src="assets/image/other/buble.png" alt="">
+                    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Rakip Analizi</span>
+                </div>
+                <div class="absolute scale-125 left-[150px] bottom-[-300px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[35%]" style="transition-delay: 1.5s;">
+                    <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 2.5s;" src="assets/image/other/buble.png" alt="">
+                    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Teknik Bilgiler</span>
+                </div>
+                <div class="absolute scale-90 left-[-70px] bottom-[-300px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[42%]" style="transition-delay: 2s;">
+                    <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 3s;" src="assets/image/other/buble.png" alt="">
+                    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Müşteri Analizi</span>
+                </div>
+                <div class="absolute bottom-[-300px] right-[80px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[11%]" style="transition-delay: 1s;">
+                    <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 0s;" src="assets/image/other/buble.png" alt="">
+                    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Beğeni Kriterleri</span>
+                </div>
+                <div class="scale-150 absolute right-[220px] bottom-[-300px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[31%]" style="transition-delay: 1.5s;">
+                    <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 2.5s;" src="assets/image/other/buble.png" alt="">
+                    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Art Direktör Yorumu</span>
+                </div>
+                <div class="absolute right-[0px] bottom-[-300px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[45%]" style="transition-delay: 2s;">
+                    <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 3s;" src="assets/image/other/buble.png" alt="">
+                    <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Sektör Araştırması</span>
+                </div>
+            </div>
+        </div>
+    </page>    <page page="7" pageName="Arayüz Tasarım İstasyonu" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450 p-[--whiteSpace]">
+        <div titleFix class="absolute top-0 left-0 w-full h-full flex items-center justify-center px-[120px]">
+            <div class="absolute top-[calc(50%-100px)] left-1/2 -translate-y-1/2 -translate-x-1/2 w-[700px] h-[300px] 2xl:w-[600px] 2xl:h-[200px]">
+                <div designer-box class="absolute top-0 left-0 w-0 h-0 group-[&.active]/wrapper:p-[30px] group-[&.active]/wrapper:w-[700px] 2xl:group-[&.active]/wrapper:w-[600px] group-[&.active]/wrapper:h-[300px] 2xl:group-[&.active]/wrapper:h-[200px] duration-1000 delay-[1.5s]">
+                    <div designer-border class="opacity-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full">
+                        <span class="absolute top-0 left-0 w-full h-full border border-solid border-[#667EEA]/60"></span>
+                        <span class="absolute border border-solid border-[#667EEA]/60 top-0 left-0 w-[10px] h-[10px] -translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                        <span class="absolute border border-solid border-[#667EEA]/60 top-0 right-0 w-[10px] h-[10px] translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                        <span class="absolute border border-solid border-[#667EEA]/60 bottom-0 left-0 w-[10px] h-[10px] -translate-x-1/2 translate-y-1/2 bg-white"></span>
+                        <span class="absolute border border-solid border-[#667EEA]/60 bottom-0 right-0 w-[10px] h-[10px] translate-x-1/2 translate-y-1/2 bg-white"></span>
+                    </div>
+                    <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center overflow-hidden">
+                        <h1 class="opacity-0 group-[&.active]/wrapper:opacity-100 duration-1000 delay-[2.5s] relative top-0 left-0 w-max h-max text-white/50 text-center text-[50px] 2xl:text-[40px] text-nowrap">
+                            UI & UX Kriterlerine Uygun <br> Özgün ve <strong class="text-white font-medium">Müşteri Odaklı <br> Tasarımlar Çiziyoruz.</strong>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <img designer-cursor class="absolute z-[99] w-[100px] top-full left-1/2 duration-1000" src="assets/image/other/cursor.png" alt="">
+        </div>
+        <div titleFix class="absolute flex items-end justify-between top-0 left-0 w-full h-full translate-y-[60px]">
+            <div style="transition-delay: 3s;" class="scale-125 2xl:scale-100 origin-bottom h-full flex items-end opacity-0 translate-y-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-y-0 duration-1000 absolute bottom-0 left-0 w-[400px]">
+                <img class="scale-x-[-1] w-full" src="assets/image/other/laptop-angled.webp" alt="">
+                <img style="transition-delay: 6s;" class="group-[&.active]/wrapper:w-[200px] group-[&.active]/wrapper:-translate-y-[40px] group-[&.active]/wrapper:translate-x-[40px] duration-1000 absolute bottom-[180px] left-[60px] w-[170px] scale-x-[-1]" src="assets/image/other/inner-screen.webp" alt="">
+                <img class="absolute z-[2] bottom-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[1000px]" src="assets/image/other/lights.webp" alt="">
+            </div>
+            <div style="transition-delay: 3.5s;" class="opacity-0 translate-y-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-y-0 duration-1000 absolute bottom-[150px] left-[450px] 2xl:left-[350px] flex items-center gap-[30px]">
+                <img class="w-[70px] mb-[20px]" src="assets/image/other/w-1.png" alt="">
+                <img src="assets/image/other/arrow.png" alt="">
+            </div>
+            <div style="transition-delay: 4s;" class="scale-125 2xl:scale-100 origin-bottom opacity-0 translate-y-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-y-0 duration-1000 absolute bottom-[100px] left-1/2 -translate-x-1/2 w-[400px]">
+                <img src="assets/image/other/laptop-normal.png" alt="">
+                <img style="transition-delay: 6s;" class="group-[&.active]/wrapper:scale-110 group-[&.active]/wrapper:-translate-y-[50px] duration-1000 absolute top-[5px] left-[40px] w-[320px] h-[200px]" src="assets/image/other/screen-2.png" alt="">
+            </div>
+            <div style="transition-delay: 4.5s;" class="opacity-0 translate-y-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-y-0 duration-1000 absolute bottom-[150px] right-[450px] 2xl:right-[350px] flex items-center gap-[30px]">
+                <img class="w-[70px]" src="assets/image/other/w-2.png" alt="">
+                <img class="mb-[20px] rotate-[-50deg]" src="assets/image/other/arrow.png" alt="">
+            </div>
+            <div style="transition-delay: 5s;" class="scale-125 2xl:scale-100 origin-bottom h-full flex items-end opacity-0 translate-y-2 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-y-0 duration-1000 absolute bottom-0 right-0 w-[400px]">
+                <img class=" w-full" src="assets/image/other/laptop-angled.webp" alt="">
+                <img style="transition-delay: 6s;" class="group-[&.active]/wrapper:w-[200px] group-[&.active]/wrapper:-translate-y-[40px] group-[&.active]/wrapper:-translate-x-[40px] duration-1000 absolute bottom-[180px] right-[60px] w-[170px] " src="assets/image/other/inner-screen.webp" alt="">
+                <img class="absolute z-[2] bottom-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[1000px]" src="assets/image/other/lights.webp" alt="">
+            </div>
+        </div>
+    </page>    <page page="8" pageName="Frontend Kodlama İstasyonu" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450 p-[--whiteSpace] [transform-style:preserve-3d] [perspective:2000px] mix-blend-lighten">
+        <div class="absolute -top-full group-[&.active]/wrapper:top-1/4 w-full text-center duration-1000 delay-400 ease-manidar">
+            <h3 class="text-5xl text-white">
+                <span class="text-white/50">Göz Alıcı Tasarımlar,</span> <br> Mükemmel Kodlarla Hayat Buluyor
+            </h3>
+        </div>
+    
+        <div id="cube" class="relative w-[70%] h-[500px] translate-y-[60%] [perspective:1000px] [transform-style:preserve-3d] opacity-0 group-[&.active]/wrapper:opacity-100 duration-[2s] delay-450 [transform:rotateX(90deg)] group-[&.active]/wrapper:rotate-0 ease-manidar">
+            <div class="absolute top-0 left-0 w-full h-full origin-top [transform:rotateX(50deg)_translateY(-100%)] mix-blend-screen [mask-image:linear-gradient(0deg,#000,transparent_80%)] bg-white/3">
+                <canvas font="30" speed="30" class="matrix absolute w-full h-full z-[10] bg-transparent"></canvas>
+            </div>
+            <div class="absolute z-[0] top-0 left-0 w-full h-full bg-white/1 overflow-hidden">
+                <canvas font="30" speed="30" class="matrix group-[&.active]/wrapper:opacity-0 absolute w-full h-full z-[5] bg-transparent mix-blend-screen duration-[2s] delay-[2s]"></canvas>
+                <canvas font="30" speed="30" class="matrix group-[&.active]/wrapper:opacity-100 absolute w-full h-full z-[5] bg-transparent mix-blend-screen [mask-image:linear-gradient(0deg,#000,transparent_80%)] duration-[2s] delay-[3s]"></canvas>
+                <img class="opacity-0 group-[&.active]/wrapper:opacity-100 absolute z-[10] top-0 left-0 w-full h-full object-cover object-top mix-blend-darken duration-[2s] delay-[3s]" src="assets/image/other/penta-web.png" alt="">
+            </div>
+        </div>
+    
+        <div class="absolute z-[-1] w-full h-full [perspective:2000px] [transform-style:preserve-3d]">
+            <canvas font="60" speed="140" class="-left-full matrix absolute bottom-0 group-[&.active]/wrapper:left-0 w-[500px] h-[500px] [transform:rotateY(45deg)_rotateX(20deg)] duration-[2s] ease-manidar [mask-image:_radial-gradient(circle,_rgba(0,0,0,1)_0%,_rgba(0,190,234,0)_80%);]"></canvas>
+            <canvas font="60" speed="140" class="-right-full matrix absolute bottom-0 group-[&.active]/wrapper:right-0 w-[500px] h-[500px] [transform:rotateY(-45deg)_rotateX(20deg)] duration-[2s] ease-manidar [mask-image:_radial-gradient(circle,_rgba(0,0,0,1)_0%,_rgba(0,190,234,0)_80%);]"></canvas>
+        </div>
+    </page>    <page page="9" pageName="Backend Kodlama İstasyonu" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450 p-[--whiteSpace]">
+        <div class="pointer-events-none absolute top-0 left-0 w-full h-full flex items-end justify-center">
+            <div class="scale-100 2xl:scale-100 translate-y-1/2 group-[&.active]/wrapper:translate-y-0 duration-1000 delay-500 ease-manidar absolute z-[0] -bottom-1/2 left-1/2 -translate-x-1/2">
+                <img class="w-full h-full animate-spin [animation-duration:50s]" src="assets/image/effects/wit.png" alt="">
+            </div>
+            <h3 class="top-1/2 group-[&.active]/wrapper:!top-0 duration-1000 delay-700 ease-manidar  relative z-[1] flex items-center text-[70px] text-white text-center leading-none h-[400px]">
+                İçeriğinizi Kolayca <br> Yönetin, Dijital Varlığınızı <br> Güçlendirin.
+            </h3>
+        </div>
+        <div class="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 gap-[50px] pt-[300px] 2xl:pt-[100px]">
+            <div class="opacity-0 top-1/2 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 duration-1000 group relative flex flex-col items-center justify-center gap-[20px] w-[200px] p-[20px] aspect-square" style="transform: translateY(100px) translateX(-20px); transition-delay: 1.5s;">
+                <div class="opacity-20 group-hover:opacity-100 duration-1000 absolute top-0 left-0 w-full h-full [mask-image:linear-gradient(180deg,#000_0%,transparent_90%)]" style="border-radius: 27.895px; border: 1.86px solid rgba(255, 255, 255, 0.4); background: radial-gradient(66.12% 78.96% at 100% 27.24%, rgba(255, 255, 255, 0.1) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(95.26% 113.75% at 100% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(92.41% 110.36% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(126.15% 150.65% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(136.77% 84.3% at 50% 5.58%, rgba(60, 67, 221, 0.57) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(96, 23, 153, 0.20) 0%, rgba(9, 11, 16, 0.00) 100%); background-blend-mode: overlay, overlay, overlay, overlay, normal, normal; box-shadow: 0px -36.264px 69.738px 0px rgba(60, 67, 221, 0.10); backdrop-filter: blur(18.596914291381836px);"></div>
+                <img class="opacity-50 group-hover:opacity-100 duration-1000 w-[40px] relative z-[1]" src="assets/image/icon/web-development.png" alt="">
+                <h3 class="text-2xl 2xl:text-lg text-white/50 group-hover:text-white duration-450 text-center">Veri Tabanı Mimarisi</h3>
+            </div>
+            <div class="opacity-0 top-1/2 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 duration-1000 group relative flex flex-col items-center justify-center gap-[20px] w-[200px] p-[20px] aspect-square" style="transform: translateY(100px) translateX(20px); transition-delay: 1.8s;">
+                <div class="opacity-20 group-hover:opacity-100 duration-1000 absolute z-[0] top-0 left-0 w-full h-full [mask-image:linear-gradient(180deg,#000_0%,transparent_90%)]" style="border-radius: 27.895px; border: 1.86px solid rgba(255, 255, 255, 0.4); background: radial-gradient(66.12% 78.96% at 100% 27.24%, rgba(255, 255, 255, 0.1) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(95.26% 113.75% at 100% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(92.41% 110.36% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(126.15% 150.65% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(136.77% 84.3% at 50% 5.58%, rgba(60, 67, 221, 0.57) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(96, 23, 153, 0.20) 0%, rgba(9, 11, 16, 0.00) 100%); background-blend-mode: overlay, overlay, overlay, overlay, normal, normal; box-shadow: 0px -36.264px 69.738px 0px rgba(60, 67, 221, 0.10); backdrop-filter: blur(18.596914291381836px);"></div>
+                <img class="opacity-50 group-hover:opacity-100 duration-1000 w-[40px] relative z-[1]" src="assets/image/icon/server.png" alt="">
+                <h3 class="text-2xl 2xl:text-lg text-white/50 group-hover:text-white  duration-450 text-center">Bulut Tabanlı Çözümler</h3>
+            </div>
+            <div class="opacity-0 top-1/2 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 duration-1000 group relative flex flex-col items-center justify-center gap-[20px] w-[200px] p-[20px] aspect-square" style="transform: translateY(-50px) translateX(-300px); transition-delay: 1.6s;">
+                <div class="opacity-20 group-hover:opacity-100 duration-1000 absolute z-[0] top-0 left-0 w-full h-full [mask-image:linear-gradient(180deg,#000_0%,transparent_90%)]" style="border-radius: 27.895px; border: 1.86px solid rgba(255, 255, 255, 0.4); background: radial-gradient(66.12% 78.96% at 100% 27.24%, rgba(255, 255, 255, 0.1) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(95.26% 113.75% at 100% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(92.41% 110.36% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(126.15% 150.65% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(136.77% 84.3% at 50% 5.58%, rgba(60, 67, 221, 0.57) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(96, 23, 153, 0.20) 0%, rgba(9, 11, 16, 0.00) 100%); background-blend-mode: overlay, overlay, overlay, overlay, normal, normal; box-shadow: 0px -36.264px 69.738px 0px rgba(60, 67, 221, 0.10); backdrop-filter: blur(18.596914291381836px);"></div>
+                <img class="opacity-50 group-hover:opacity-100 duration-1000 w-[40px] relative z-[1]" src="assets/image/icon/api.png" alt="">
+                <h3 class="text-2xl 2xl:text-lg text-white/50 group-hover:text-white  duration-450 text-center">API Tasarım & Entegrasyonu</h3>
+            </div>
+            <div class="opacity-0 top-1/2 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 duration-1000 group relative flex flex-col items-center justify-center gap-[20px] w-[200px] p-[20px] aspect-square" style="transform: translateY(-50px) translateX(300px); transition-delay: 1.9s;">
+                <div class="opacity-20 group-hover:opacity-100 duration-1000 absolute z-[0] top-0 left-0 w-full h-full [mask-image:linear-gradient(180deg,#000_0%,transparent_90%)]" style="border-radius: 27.895px; border: 1.86px solid rgba(255, 255, 255, 0.4); background: radial-gradient(66.12% 78.96% at 100% 27.24%, rgba(255, 255, 255, 0.1) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(95.26% 113.75% at 100% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(92.41% 110.36% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(126.15% 150.65% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(136.77% 84.3% at 50% 5.58%, rgba(60, 67, 221, 0.57) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(96, 23, 153, 0.20) 0%, rgba(9, 11, 16, 0.00) 100%); background-blend-mode: overlay, overlay, overlay, overlay, normal, normal; box-shadow: 0px -36.264px 69.738px 0px rgba(60, 67, 221, 0.10); backdrop-filter: blur(18.596914291381836px);"></div>
+                <img class="opacity-50 group-hover:opacity-100 duration-1000 w-[40px] relative z-[1]" src="assets/image/icon/ux.png" alt="">
+                <h3 class="text-2xl 2xl:text-lg text-white/50 group-hover:text-white  duration-450 text-center">Kullanıcı Deneyimi Haritalama</h3>
+            </div>
+            <div class="opacity-0 top-1/2 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 duration-1000 group relative flex flex-col items-center justify-center gap-[20px] w-[200px] p-[20px] aspect-square" style="transform: translateY(-80px) translateX(-450px); transition-delay: 1.7s;">
+                <div class="opacity-20 group-hover:opacity-100 duration-1000 absolute z-[0] top-0 left-0 w-full h-full [mask-image:linear-gradient(180deg,#000_0%,transparent_90%)]" style="border-radius: 27.895px; border: 1.86px solid rgba(255, 255, 255, 0.4); background: radial-gradient(66.12% 78.96% at 100% 27.24%, rgba(255, 255, 255, 0.1) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(95.26% 113.75% at 100% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(92.41% 110.36% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(126.15% 150.65% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(136.77% 84.3% at 50% 5.58%, rgba(60, 67, 221, 0.57) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(96, 23, 153, 0.20) 0%, rgba(9, 11, 16, 0.00) 100%); background-blend-mode: overlay, overlay, overlay, overlay, normal, normal; box-shadow: 0px -36.264px 69.738px 0px rgba(60, 67, 221, 0.10); backdrop-filter: blur(18.596914291381836px);"></div>
+                <img class="opacity-50 group-hover:opacity-100 duration-1000 w-[40px] relative z-[1]" src="assets/image/icon/reuse.png" alt="">
+                <h3 class="text-2xl 2xl:text-lg text-white/50 group-hover:text-white  duration-450 text-center">Yeniden Kullanılabilir Bileşenler</h3>
+            </div>
+            <div class="opacity-0 top-1/2 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 duration-1000 group relative flex flex-col items-center justify-center gap-[20px] w-[200px] p-[20px] aspect-square" style="transform: translateY(-80px) translateX(450px); transition-delay: 2s;">
+                <div class="opacity-20 group-hover:opacity-100 duration-1000 absolute z-[0] top-0 left-0 w-full h-full [mask-image:linear-gradient(180deg,#000_0%,transparent_90%)]" style="border-radius: 27.895px; border: 1.86px solid rgba(255, 255, 255, 0.4); background: radial-gradient(66.12% 78.96% at 100% 27.24%, rgba(255, 255, 255, 0.1) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(95.26% 113.75% at 100% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(92.41% 110.36% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(126.15% 150.65% at -2.91% 27.24%, rgba(255, 255, 255, 0.2) 0%, rgba(108, 53, 178, 0.00) 60.39%), radial-gradient(136.77% 84.3% at 50% 5.58%, rgba(60, 67, 221, 0.57) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(96, 23, 153, 0.20) 0%, rgba(9, 11, 16, 0.00) 100%); background-blend-mode: overlay, overlay, overlay, overlay, normal, normal; box-shadow: 0px -36.264px 69.738px 0px rgba(60, 67, 221, 0.10); backdrop-filter: blur(18.596914291381836px);"></div>
+                <img class="opacity-50 group-hover:opacity-100 duration-1000 w-[40px] relative z-[1]" src="assets/image/icon/solution.png" alt="">
+                <h3 class="text-2xl 2xl:text-lg text-white/50 group-hover:text-white  duration-450 text-center">Kullanıcı Odaklı Geliştirme</h3>
+            </div>
+        </div>
+        <div class="absolute pointer-events-none z-[100] top-0 left-0 w-full h-full flex justify-between items-center scale-200 group-[&.active]/wrapper:scale-100 duration-1000 delay-[2.5s]">
+            <button popup="wordpress" href="#" class="group-[&.active]/wrapper:pointer-events-auto pointer-events-none flex relative z-[110] hover:translate-x-[20px] duration-1000">
+                <img class="w-[180px] opacity-25 -translate-x-[50px] scale-x-[-1]" src="assets/image/other/side-panel.png" alt="">
+                <img class="absolute top-1/2 right-[20px] -translate-x-full -translate-y-1/2 w-[50px] h-[50px]" src="assets/image/icon/wordpress.png" alt="">
+            </button>
+            <button popup="laravel" href="#" class="group-[&.active]/wrapper:pointer-events-auto pointer-events-none flex relative z-[110] hover:translate-x-[-20px] duration-1000">
+                <img class="w-[180px] opacity-25 translate-x-[50px]" src="assets/image/other/side-panel.png" alt="">
+                <img class="absolute top-1/2 left-[20px] translate-x-full -translate-y-1/2 w-[50px] h-[50px]" src="assets/image/icon/laravel.png" alt="">
+            </button>
+        </div>
+        <div goto=10 class="absolute z-[999] bottom-0 left-0 w-full h-[200px]"></div>
+    </page>    <page page="10" pageName="Test Süreci ve Yayına Alma" class="group/wrapper absolute z-[5] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450">
+        <video class="opacity-0 group-[&.active]/wrapper:opacity-100 duration-1000 delay-1000 absolute top-0 left-0 w-full h-full object-cover object-center" autoplay muted loop src="assets/video/spining-world.mp4"></video>
+        <div titleFix class="absolute top-0 left-0 w-full h-full flex justify-between px-[120px] bg-black/30">
+            <div class="-translate-x-full opacity-0 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-x-0 duration-1000 delay-[1.5s] flex flex-col items-center justify-center">
+                <li class="group translate-x-[-60px] flex flex-col gap-[20px] p-[30px_60px] rounded-[30px] bg-[linear-gradient(180deg,rgba(23,114,153,0.20)0%,rgba(23,114,153,0.08)100%)] backdrop-blur-[30px] duration-450">
+                    <span class="[--borderSize:2px] absolute overflow-hidden z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[calc(100%+var(--borderSize))] h-[calc(100%+var(--borderSize))] rounded-[30px] border-solid [border-width:var(--borderSize)] border-white duration-450 [mask-image:linear-gradient(180deg,rgba(23,114,153,0.20)_0%,rgba(23,114,153,0.08)_100%)]"></span>
+                    <div class="flex items-center justify-start gap-[20px]">
+                        <div class="min-w-[40px] min-h-[40px] max-w-[40px] max-h-[40px] flex items-center justify-center p-[10px] bg-white/5 rounded-full backdrop-blur-xl">
+                            <img class="w-full h-full ml-[5px]" src="assets/image/icon/papers.svg" alt="">
+                        </div>
+                        <h2 class="text-2xl 2xl:text-lg text-white/70 group-hover:text-white duration-450">Detayları anlatabilmek</h2>
+                    </div>
+                </li>
+                <img class="scale-x-[-1]" src="assets/image/effects/line.svg" alt="">
+                <li class="group translate-x-[60px] flex flex-col gap-[20px] p-[30px_60px] rounded-[30px] bg-[linear-gradient(180deg,rgba(23,114,153,0.20)0%,rgba(23,114,153,0.08)100%)] backdrop-blur-[30px] duration-450">
+                    <span class="[--borderSize:2px] absolute overflow-hidden z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[calc(100%+var(--borderSize))] h-[calc(100%+var(--borderSize))] rounded-[30px] border-solid [border-width:var(--borderSize)] border-white duration-450 [mask-image:linear-gradient(180deg,rgba(23,114,153,0.20)_0%,rgba(23,114,153,0.08)_100%)]"></span>
+                    <div class="flex items-center justify-start gap-[20px]">
+                        <div class="min-w-[40px] min-h-[40px] max-w-[40px] max-h-[40px] flex items-center justify-center p-[10px] bg-white/5 rounded-full backdrop-blur-xl">
+                            <img class="w-full h-full ml-[5px]" src="assets/image/icon/papers.svg" alt="">
+                        </div>
+                        <h2 class="text-2xl 2xl:text-lg text-white/70 group-hover:text-white duration-450">Görüntülenme Artışı</h2>
+                    </div>
+                </li>
+            </div>
+            <div class="translate-x-full opacity-0 group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-x-0 duration-1000 delay-[1.5s] flex flex-col items-center justify-center">
+                <li class="group translate-x-[60px] flex flex-col gap-[20px] p-[30px_60px] rounded-[30px] bg-[linear-gradient(180deg,rgba(23,114,153,0.20)0%,rgba(23,114,153,0.08)100%)] backdrop-blur-[30px] duration-450">
+                    <span class="[--borderSize:2px] absolute overflow-hidden z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[calc(100%+var(--borderSize))] h-[calc(100%+var(--borderSize))] rounded-[30px] border-solid [border-width:var(--borderSize)] border-white duration-450 [mask-image:linear-gradient(180deg,rgba(23,114,153,0.20)_0%,rgba(23,114,153,0.08)_100%)]"></span>
+                    <div class="flex items-center justify-start gap-[20px]">
+                        <div class="min-w-[40px] min-h-[40px] max-w-[40px] max-h-[40px] flex items-center justify-center p-[10px] bg-white/5 rounded-full backdrop-blur-xl">
+                            <img class="w-full h-full ml-[5px]" src="assets/image/icon/papers.svg" alt="">
+                        </div>
+                        <h2 class="text-2xl 2xl:text-lg text-white/70 group-hover:text-white duration-450">Detayları anlatabilmek</h2>
+                    </div>
+                </li>
+                <img src="assets/image/effects/line.svg" alt="">
+                <li class="group translate-x-[-60px] flex flex-col gap-[20px] p-[30px_60px] rounded-[30px] bg-[linear-gradient(180deg,rgba(23,114,153,0.20)0%,rgba(23,114,153,0.08)100%)] backdrop-blur-[30px] duration-450">
+                    <span class="[--borderSize:2px] absolute overflow-hidden z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-[calc(100%+var(--borderSize))] h-[calc(100%+var(--borderSize))] rounded-[30px] border-solid [border-width:var(--borderSize)] border-white duration-450 [mask-image:linear-gradient(180deg,rgba(23,114,153,0.20)_0%,rgba(23,114,153,0.08)_100%)]"></span>
+                    <div class="flex items-center justify-start gap-[20px]">
+                        <div class="min-w-[40px] min-h-[40px] max-w-[40px] max-h-[40px] flex items-center justify-center p-[10px] bg-white/5 rounded-full backdrop-blur-xl">
+                            <img class="w-full h-full ml-[5px]" src="assets/image/icon/papers.svg" alt="">
+                        </div>
+                        <h2 class="text-2xl 2xl:text-lg text-white/70 group-hover:text-white duration-450">Görüntülenme Artışı</h2>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <div titleFix class="opacity-0 group-[&.active]/wrapper:opacity-100 duration-1000 delay-[2s] absolute top-[-30px] left-0 w-full h-full flex justify-center items-center">
+            <h3 class="text-[70px] 3xl:text-[50px] text-center text-white">
+                Detaylı Test Süreci, <br> Başarılı Yayın.
+            </h3>
+        </div>
+    </page>    <page page="11" pageName="Farklarımız" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450">
+        <div class="top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 translate-y-[-150px] 2xl:translate-y-[-100px] absolute left-0 w-full h-full flex items-center justify-center duration-1000 delay-1000 ease-manidar">
+            <h3 class="text-[50px] text-white">
+                Standartlar hediye olarak sunulamaz.
+            </h3>
+        </div>
+        <div titleFix class="translate-y-[100px] flex gap-[30px]">
+            <div class="group top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative w-full h-[310px] 2xl:h-auto p-[30px] delay-1000 duration-1000 before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:border before:border-solid before:border-transparent before:rounded-[30px] before:duration-450 hover:before:border-white/20 hover:before:w-[calc(100%+30px)] hover:before:h-[calc(100%+30px)] " style="transform: translateY(-20px); transition-delay:1.0s">
+                <div class="opacity-50 group-hover:opacity-100 duration-450">
+                    <div class="[mask-image:linear-gradient(180deg,#000_0%,transparent)] duration-1000 absolute top-0 left-0 w-full h-full" style="background-size: 100% 100%; background-position: top; background-image: url('assets/image/other/fancy-background.png');"></div>
+                    <div class="relative z-[10] w-full h-full flex flex-col items-center justify-between">
+                        <img class="duration-1000 w-[170px] relative z-[1] [mask-image:linear-gradient(180deg,#000_0%,transparent)]" src="assets/image/other/file.png" alt="">
+                        <h3 class="text-2xl 2xl:text-lg flex items-center h-[50px] text-white/50 group-hover:text-white duration-450 text-center">at position 16</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="group top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative w-full h-[310px] 2xl:h-auto p-[30px] delay-1000 duration-1000 before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:border before:border-solid before:border-transparent before:rounded-[30px] before:duration-450 hover:before:border-white/20 hover:before:w-[calc(100%+30px)] hover:before:h-[calc(100%+30px)] " style="transform: translateY(20px); transition-delay:1.2s">
+                <div class="opacity-50 group-hover:opacity-100 duration-450">
+                    <div class="[mask-image:linear-gradient(180deg,#000_0%,transparent)] duration-1000 absolute top-0 left-0 w-full h-full" style="background-size: 100% 100%; background-position: top; background-image: url('assets/image/other/fancy-background.png');"></div>
+                    <div class="relative z-[10] w-full h-full flex flex-col items-center justify-between">
+                        <img class="duration-1000 w-[170px] relative z-[1] [mask-image:linear-gradient(180deg,#000_0%,transparent)]" src="assets/image/other/heart.png" alt="">
+                        <h3 class="text-2xl 2xl:text-lg flex items-center h-[50px] text-white/50 group-hover:text-white duration-450 text-center">at position 16</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="group top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative w-full h-[310px] 2xl:h-auto p-[30px] delay-1000 duration-1000 before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:border before:border-solid before:border-transparent before:rounded-[30px] before:duration-450 hover:before:border-white/20 hover:before:w-[calc(100%+30px)] hover:before:h-[calc(100%+30px)] " style="transform: translateY(-20px); transition-delay:1.4s">
+                <div class="opacity-50 group-hover:opacity-100 duration-450">
+                    <div class="[mask-image:linear-gradient(180deg,#000_0%,transparent)] duration-1000 absolute top-0 left-0 w-full h-full" style="background-size: 100% 100%; background-position: top; background-image: url('assets/image/other/fancy-background.png');"></div>
+                    <div class="relative z-[10] w-full h-full flex flex-col items-center justify-between">
+                        <img class="duration-1000 w-[170px] relative z-[1] [mask-image:linear-gradient(180deg,#000_0%,transparent)]" src="assets/image/other/switch.png" alt="">
+                        <h3 class="text-2xl 2xl:text-lg flex items-center h-[50px] text-white/50 group-hover:text-white duration-450 text-center">at position 16</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="group top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative w-full h-[310px] 2xl:h-auto p-[30px] delay-1000 duration-1000 before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:border before:border-solid before:border-transparent before:rounded-[30px] before:duration-450 hover:before:border-white/20 hover:before:w-[calc(100%+30px)] hover:before:h-[calc(100%+30px)] " style="transform: translateY(20px); transition-delay:1.6s">
+                <div class="opacity-50 group-hover:opacity-100 duration-450">
+                    <div class="[mask-image:linear-gradient(180deg,#000_0%,transparent)] duration-1000 absolute top-0 left-0 w-full h-full" style="background-size: 100% 100%; background-position: top; background-image: url('assets/image/other/fancy-background.png');"></div>
+                    <div class="relative z-[10] w-full h-full flex flex-col items-center justify-between">
+                        <img class="duration-1000 w-[170px] relative z-[1] [mask-image:linear-gradient(180deg,#000_0%,transparent)]" src="assets/image/other/chain.png" alt="">
+                        <h3 class="text-2xl 2xl:text-lg flex items-center h-[50px] text-white/50 group-hover:text-white duration-450 text-center">at position 16</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="group top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative w-full h-[310px] 2xl:h-auto p-[30px] delay-1000 duration-1000 before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full before:h-full before:border before:border-solid before:border-transparent before:rounded-[30px] before:duration-450 hover:before:border-white/20 hover:before:w-[calc(100%+30px)] hover:before:h-[calc(100%+30px)] " style="transform: translateY(-20px); transition-delay:1.8s">
+                <div class="opacity-50 group-hover:opacity-100 duration-450">
+                    <div class="[mask-image:linear-gradient(180deg,#000_0%,transparent)] duration-1000 absolute top-0 left-0 w-full h-full" style="background-size: 100% 100%; background-position: top; background-image: url('assets/image/other/fancy-background.png');"></div>
+                    <div class="relative z-[10] w-full h-full flex flex-col items-center justify-between">
+                        <img class="duration-1000 w-[170px] relative z-[1] [mask-image:linear-gradient(180deg,#000_0%,transparent)]" src="assets/image/other/star.png" alt="">
+                        <h3 class="text-2xl 2xl:text-lg flex items-center h-[50px] text-white/50 group-hover:text-white duration-450 text-center">at position 16</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </page>    <page page="12" pageName="Referanslar" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450">
+        <div titleFix class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[100px] 2xl:gap-[50px] px-[120px]">
+            <div class="grid grid-cols-5 gap-[20px]">
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 0.1s;">
+                    <img class="object-contain object-center" src="assets/image/other/sahibinden.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 0.2s;">
+                    <img class="object-contain object-center" src="assets/image/other/eaa.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 0.3s;">
+                    <img class="object-contain object-center" src="assets/image/other/sahibinden.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 0.4s;">
+                    <img class="object-contain object-center" src="assets/image/other/eaa.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 0.5s;">
+                    <img class="object-contain object-center" src="assets/image/other/sahibinden.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 0.6s;">
+                    <img class="object-contain object-center" src="assets/image/other/eaa.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 0.7s;">
+                    <img class="object-contain object-center" src="assets/image/other/sahibinden.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 0.8s;">
+                    <img class="object-contain object-center" src="assets/image/other/eaa.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 0.9s;">
+                    <img class="object-contain object-center" src="assets/image/other/sahibinden.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 1s;">
+                    <img class="object-contain object-center" src="assets/image/other/eaa.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 1.1s;">
+                    <img class="object-contain object-center" src="assets/image/other/sahibinden.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 1.2s;">
+                    <img class="object-contain object-center" src="assets/image/other/eaa.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 1.3s;">
+                    <img class="object-contain object-center" src="assets/image/other/sahibinden.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 1.4s;">
+                    <img class="object-contain object-center" src="assets/image/other/eaa.png" alt="">
+                </a>
+                <a href="https://ui.pentayazilim.com/" target="_blank" class="translate-y-5 opacity-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 p-[50px] bg-white rounded-lg duration-1000 ease-pentalogo" style="transition-delay: 1.5s;">
+                    <img class="object-contain object-center" src="assets/image/other/sahibinden.png" alt="">
+                </a>
+            </div>
+    
+            <div class="w-full flex justify-start items-center gap-[50px]">
+                <h2 class="text-white/60 font-light text-[35px] -translate-x-1 opacity-0 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:opacity-100 duration-1000 delay-1000">Partnerlerimiz:</h2>
+                <ul class="flex justify-between items-center gap-[30px]">
+                    <li class="w-[100px] opacity-0 -translate-x-1 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:opacity-100 duration-1000" style="transition-delay: 1.2s;">
+                        <img class="w-full" src="assets/image/icon/google.png" alt="">
+                    </li>
+                    <li class="w-[100px] opacity-0 -translate-x-1 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:opacity-100 duration-1000" style="transition-delay: 1.4s;">
+                        <img class="w-full" src="assets/image/icon/google.png" alt="">
+                    </li>
+                    <li class="w-[100px] opacity-0 -translate-x-1 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:opacity-100 duration-1000" style="transition-delay: 1.6s;">
+                        <img class="w-full" src="assets/image/icon/google.png" alt="">
+                    </li>
+                    <li class="w-[100px] opacity-0 -translate-x-1 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:opacity-100 duration-1000" style="transition-delay: 1.8s;">
+                        <img class="w-full" src="assets/image/icon/google.png" alt="">
+                    </li>
+                    <li class="w-[100px] opacity-0 -translate-x-1 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:opacity-100 duration-1000" style="transition-delay: 2s;">
+                        <img class="w-full" src="assets/image/icon/google.png" alt="">
+                    </li>
+                    <li class="w-[100px] opacity-0 -translate-x-1 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:opacity-100 duration-1000" style="transition-delay: 2.2s;">
+                        <img class="w-full" src="assets/image/icon/google.png" alt="">
+                    </li>
+                    <li class="w-[100px] opacity-0 -translate-x-1 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:opacity-100 duration-1000" style="transition-delay: 2.4s;">
+                        <img class="w-full" src="assets/image/icon/google.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </page>    <page page="13" pageName="Geliştirdiğimiz Ürünler" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450">
+        <div titleFix class="absolute top-0 left-0 w-full h-full grid grid-cols-[1fr,1.3fr] items-center gap-[50px] px-[120px]">
+            <div class="flex flex-col items-start gap-[30px]">
+                <img class="w-[300px] opacity-0 -translate-x-[50px] group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-x-0 duration-1000 delay-[1s]" src="assets/image/icon/mesai.png" alt="">
+                <p class="opacity-0 -translate-y-[30px] group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-y-0 duration-1000 delay-[1.5s] text-left text-[25px] 2xl:text-[20px] text-white">Mesai, toplantı verilerinizi kaydederek, yazıya dökerek ve analiz ederek toplantı etkinliğinizi ve üretkenliğinizi artıran bir yapay zeka toplantı asistanıdır.</p>
+                <button class="group opacity-0 -translate-y-[30px] group-[&.active]/wrapper:opacity-100 group-[&.active]/wrapper:translate-y-0 duration-1000 delay-[1.8s] relative w-auto h-auto">
+                    <span class="absolute z-[0] top-0 left-0 block w-full h-full border-solid border border-white/30 rounded-full [mask-image:linear-gradient(0deg,transparent,#fff)]"></span>
+                    <span class="absolute z-[1] top-0 left-0 block w-full h-full border-solid border border-white/30 rounded-full opacity-0 group-hover:opacity-100 duration-450"></span>
+                    <span class="block p-[15px_30px] text-lg 2xl:text-sm text-white">Örnek Çalışmalar</span>
+                </button>
+            </div>
+            <div class="flex flex-wrap justify-center gap-[20px]">
+                <img class="translate-x-0 translate-y-[50px] opacity-0 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 duration-[1.5s] ease-manidar w-[90%]" style="transition-delay: 2s;" src="assets/image/other/mesai-1.png" alt="">
+                <img class="translate-x-[50px] translate-y-[-50px] opacity-0 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 duration-[1.5s] ease-manidar w-[calc(40%-10px)]" style="transition-delay: 2.2s;" src="assets/image/other/mesai-2.png" alt="">
+                <img class="translate-x-[-50px] translate-y-[-50px] opacity-0 group-[&.active]/wrapper:translate-x-0 group-[&.active]/wrapper:translate-y-0 group-[&.active]/wrapper:opacity-100 duration-[1.5s] ease-manidar w-[calc(60%-10px)]" style="transition-delay: 2.4s;" src="assets/image/other/mesai-3.png" alt="">
+            </div>
+        </div>
+    </page>    <page page="14" pageName="" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450">
+        <div titleFix class="absolute top-0 left-0 w-full h-full grid grid-cols-[1fr,1.3fr] items-center gap-[50px] px-[120px]">
+            <video autoplay muted loop class="opacity-0 group-[&.active]/wrapper:opacity-100 absolute z-[0] top-0 left-0 w-full h-full object-cover object-center duration-1000 delay-[2s]" src="assets/video/final.mp4"></video>
+            <span class="absolute z-[1] top-0 left-0 w-full h-full bg-black/75"></span>
+            <h3 class="opacity-0 translate-y-1 group-[&.active]/wrapper:-translate-y-1/2 group-[&.active]/wrapper:opacity-100 absolute z-[2] top-1/2 left-1/2 -translate-x-1/2 text-white text-center text-[80px] duration-1000 delay-1000">
+                Bizi Dinlediğiniz İçin <br> Teşekkür Ederiz
+            </h3>
+            <img class="opacity-0 group-[&.active]/wrapper:opacity-100 duration-1000 delay-[1.5s] absolute z-[3] bottom-[60px] left-1/2 w-[300px] -translate-x-1/2" src="assets/image/trademark/logo.png" alt="">
+        </div>
+    </page></main>
+
+</body>
+
+</html>
