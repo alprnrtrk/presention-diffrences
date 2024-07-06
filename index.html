@@ -27,7 +27,7 @@
                     <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                 </svg>
             </div>
-            <button nav-reset class="flex items-center justify-center w-0 [&.active]:mx-[10px] [&.active]:w-[30px] overflow-hidden opacity-50 hover:opacity-100 duration-450">
+            <button nav-reset class="active flex items-center justify-center w-0 [&.active]:mx-[10px] [&.active]:w-[30px] overflow-hidden opacity-50 hover:opacity-100 duration-450">
                 <svg class="w-[20px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path d="M463.5 224H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5z" />
                 </svg>
@@ -51,14 +51,6 @@
         </h1>
         <span class="w-[calc(100%-var(--aviableWidth)-var(--gap)*2)] h-[2px] flex ml-auto bg-white/10 duration-450"></span>
         <h2 class="relative overflow-hidden w-[4rem] h-[4rem] flex items-center"></h2>
-    </section>    <section id="pre-loader" class="absolute pointer-events-none z-[9999] top-0 left-0 w-full h-full flex items-center justify-center bg-black duration-1000">
-        <svg class="w-[200px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 50">
-            <g class="header-logo-icon fill-white">
-                <path d="M6.68,0C2.99,0,0,2.98,0,6.67v43.33h47.81c3.69,0,6.68-2.98,6.68-6.67V0H6.68ZM49.86,45.38H4.63V4.62h45.23v40.76Z"></path>
-                <path d="M14.22,23.58h31.83V7.71H8.28v34.75h5.94v-18.89ZM41.64,12.68v5.94H14.22v-5.94h27.42Z"></path>
-                <path class="header-logo-icon-y transform-flat transform-fill !origin-center [--header-logo-icon-rotate:0deg] [transform:perspective(300px)_rotateY(var(--header-logo-icon-rotate))_translateZ(0)]" d="M38.99,25.56l-8.48,7.25-7.09-6.98h-7.67l15.72,16.67,8.84-.05-6.02-5.93,11.77-10.97h-7.07Z" style="--header-logo-icon-rotate: 0deg;"></path>
-            </g>
-        </svg>
     </section>    <section popup-id="wordpress" class="[&.active]:pointer-events-auto [&.active]:opacity-100 pointer-events-none opacity-0 flex items-center justify-center fixed z-[999] top-0 left-0 w-full h-full bg-black/50 backdrop-blur-xl p-[--whiteSpace]">
         <div class="relative flex items-center justify-center w-[1200px] h-[600px] bg-white rounded-xl">
             <button close-pop="wordpress" class="group absolute flex items-center justify-center top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50px] h-[50px] rounded-full bg-black border-solid border border-white text-white">
@@ -172,7 +164,7 @@
             <video class="absolute top-0 left-0 w-full h-full object-cover [mask-image:radial-gradient(20%_30%_at_50.02%_34.08%,rgba(0,0,0,.5)_0%,rgba(0,0,0,0)_150%)]" autoplay muted loop src="assets/video/world.mp4"></video>
             <span class="absolute top-0 left-0 w-full h-full mix-blend-overlay bg-[linear-gradient(127deg,rgba(23,114,153,0.50)_37.94%,rgba(108,53,178,0.50)_51.89%)] [mask-image:radial-gradient(20%_30%_at_50.02%_34.08%,rgba(0,0,0,.5)_0%,rgba(0,0,0,0)_150%)]"></span>
             <div class="absolute z-[50] top-0 left-0 w-full h-full">
-                <div pin="en" x="45" y="30" class="opacity-30 [&.active]:opacity-100 group/pin absolute w-[20px] h-[20px] rounded-full border-solid [&.active]:border-[3px] border-[2px] border-[#5F676B] bg-white duration-450 before:absolute before:z-[-1] before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:w-[30px] before:h-[30px] [&.active]:before:w-[50px] [&.active]:before:h-[50px] before:bg-white/50 before:rounded-full before:duration-450 after:opacity-0 [&.active]:after:opacity-100 after:absolute after:z-[-1] after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:h-[80px] after:w-[80px] after:bg-white/25 after:rounded-full after:duration-450">
+                <div pin="en" x="45" y="30" class="opacity-30 [&.active]:opacity-100 group/pin absolute w-[20px] h-[20px] rounded-full border-solid [&.active]:border-[#5F676B] border-[2px] border-transparent bg-white duration-450 before:absolute before:z-[-1] before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:w-[30px] before:h-[30px] [&.active]:before:w-[50px] [&.active]:before:h-[50px] before:bg-white/50 before:rounded-full before:duration-450 after:opacity-0 [&.active]:after:opacity-100 after:absolute after:z-[-1] after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:h-[80px] after:w-[80px] after:bg-white/25 after:rounded-full after:duration-450">
                     <div class="z-[99] -translate-y-3 group-[&.active]/pin:translate-y-[40px] opacity-0 group-[&.active]/pin:opacity-100 absolute pointer-events-none top-full left-1/2 -translate-x-1/2 flex items-center gap-[10px] pr-[30px] p-[10px_20px] bg-white/5 border-solid border border-white/50 rounded-full backdrop-blur-[30px] duration-450">
                         <img class="w-[13px]" src="assets/image/icon/pin.svg" alt="">
                         <span class="text-nowrap text-white">
@@ -180,7 +172,7 @@
                         </span>
                     </div>
                 </div>
-                <div pin="de" x="49" y="38" class="opacity-30 [&.active]:opacity-100 group/pin absolute w-[20px] h-[20px] rounded-full border-solid [&.active]:border-[3px] border-[2px] border-[#5F676B] bg-white duration-450 before:absolute before:z-[-1] before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:w-[30px] before:h-[30px] [&.active]:before:w-[50px] [&.active]:before:h-[50px] before:bg-white/50 before:rounded-full before:duration-450 after:opacity-0 [&.active]:after:opacity-100 after:absolute after:z-[-1] after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:h-[80px] after:w-[80px] after:bg-white/25 after:rounded-full after:duration-450">
+                <div pin="de" x="49" y="38" class="opacity-30 [&.active]:opacity-100 group/pin absolute w-[20px] h-[20px] rounded-full border-solid [&.active]:border-[#5F676B] border-[2px] border-transparent bg-white duration-450 before:absolute before:z-[-1] before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:w-[30px] before:h-[30px] [&.active]:before:w-[50px] [&.active]:before:h-[50px] before:bg-white/50 before:rounded-full before:duration-450 after:opacity-0 [&.active]:after:opacity-100 after:absolute after:z-[-1] after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:h-[80px] after:w-[80px] after:bg-white/25 after:rounded-full after:duration-450">
                     <div class="z-[99] -translate-y-3 group-[&.active]/pin:translate-y-[40px] opacity-0 group-[&.active]/pin:opacity-100 absolute pointer-events-none top-full left-1/2 -translate-x-1/2 flex items-center gap-[10px] pr-[30px] p-[10px_20px] bg-white/5 border-solid border border-white/50 rounded-full backdrop-blur-[30px] duration-450">
                         <img class="w-[13px]" src="assets/image/icon/pin.svg" alt="">
                         <span class="text-nowrap text-white">
@@ -188,7 +180,7 @@
                         </span>
                     </div>
                 </div>
-                <div pin="tr" x="55" y="40" class="opacity-30 [&.active]:opacity-100 group/pin absolute w-[20px] h-[20px] rounded-full border-solid [&.active]:border-[3px] border-[2px] border-[#5F676B] bg-white duration-450 before:absolute before:z-[-1] before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:w-[30px] before:h-[30px] [&.active]:before:w-[50px] [&.active]:before:h-[50px] before:bg-white/50 before:rounded-full before:duration-450 after:opacity-0 [&.active]:after:opacity-100 after:absolute after:z-[-1] after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:h-[80px] after:w-[80px] after:bg-white/25 after:rounded-full after:duration-450">
+                <div pin="tr" x="55" y="40" class="opacity-30 [&.active]:opacity-100 group/pin absolute w-[20px] h-[20px] rounded-full border-solid [&.active]:border-[#5F676B] border-[2px] border-transparent bg-white duration-450 before:absolute before:z-[-1] before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:w-[30px] before:h-[30px] [&.active]:before:w-[50px] [&.active]:before:h-[50px] before:bg-white/50 before:rounded-full before:duration-450 after:opacity-0 [&.active]:after:opacity-100 after:absolute after:z-[-1] after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:h-[80px] after:w-[80px] after:bg-white/25 after:rounded-full after:duration-450">
                     <div class="z-[99] -translate-y-3 group-[&.active]/pin:translate-y-[40px] opacity-0 group-[&.active]/pin:opacity-100 absolute pointer-events-none top-full left-1/2 -translate-x-1/2 flex items-center gap-[10px] pr-[30px] p-[10px_20px] bg-white/5 border-solid border border-white/50 rounded-full backdrop-blur-[30px] duration-450">
                         <img class="w-[13px]" src="assets/image/icon/pin.svg" alt="">
                         <span class="text-nowrap text-white">
@@ -246,29 +238,29 @@
             <h3 class="translate-y-[-80px] translate-x-[80px] scale-125 2xl:ml-0 2xl:scale-100 text-[350px] bg-clip-text text-transparent bg-[radial-gradient(70%_70%_at_50%_90%,rgba(255,255,255,0.22)_0%,rgba(0,0,0,.3)_96.02%)]" style="-webkit-text-fill-color: transparent; -webkit-text-stroke: 2px rgba(255,255,255,.05);">360°</h3>
         </div>
         <div class="pointer-events-none group-[&.active]/wrapper:translate-y-0 absolute top-0 left-0 translate-y-full w-full h-full flex items-center justify-center duration-[2s] delay-[2s] ease-moon">
-            <div class="relative w-[170px] h-[170px] 2xl:w-[130px] 2xl:h-[130px] rounded-full overflow-hidden">
+            <div class="relative w-[10vw] h-[10vw] rounded-full overflow-hidden">
                 <img class="w-full h-full" src="assets/image/other/moon.gif" alt="">
                 <span class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-white/30 to-transparent"></span>
             </div>
-            <div class="absolute pointer-events-auto bottom-0 left-1/2 -translate-x-1/2 w-[1100px] 2xl:w-[800px] h-[450px] 2xl:h-[300px]">
-                <img class="relative z-0 w-full h-full" src="assets/image/other/lines.png" alt="">
+            <div class="absolute pointer-events-auto bottom-0 left-1/2 -translate-x-1/2 w-[70vw] h-[50vh]">
+                <img class="absolute top-0 left-0 z-0 w-full h-full object-fill" src="assets/image/other/lines.png" alt="">
                 <div class="absolute z-1 top-0 left-0 w-full h-full grid grid-cols-2 place-items-center">
-                    <div mask-image="-30" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[10px] translate-y-[-70px] delay-[4s]">
+                    <div mask-image="-30" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[2vw] translate-y-[-10vh] delay-[4s]">
                         Dijital Pazarlama
                     </div>
-                    <div mask-image="30" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[10px] translate-y-[-70px] delay-[4.1s]">
+                    <div mask-image="30" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[-2vw] translate-y-[-10vh] delay-[4.1s]">
                         Web Hizmetleri
                     </div>
-                    <div mask-image="-40" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[-150px] translate-y-[-80px] delay-[4.2s]">
+                    <div mask-image="-40" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[-12vw] translate-y-[-18vh] delay-[4.2s]">
                         Grafik Tasarım
                     </div>
-                    <div mask-image="40" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[150px] translate-y-[-80px] delay-[4.3s]">
+                    <div mask-image="40" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[12vw] translate-y-[-18vh] delay-[4.3s]">
                         Diğer Hizmetler
                     </div>
-                    <div mask-image="-70" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[50px] translate-y-[-100px] delay-[4.4s]">
+                    <div mask-image="-70" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2]  top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[2vw] translate-y-[-22vh] delay-[4.4s]">
                         Markalama
                     </div>
-                    <div mask-image="70" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2] top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[-50px] translate-y-[-100px] delay-[4.5s]">
+                    <div mask-image="70" reset-delay="4000" class="text-2xl 2xl:text-base hover:!bg-[#6C35B2] hover:shadow-[0_0_50px] hover:shadow-[#6C35B2] top-[50px] opacity-0 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 relative z-[10] w-max h-max p-[20px_40px] border-solid border border-white/26 rounded-full bg-white/10 text-white backdrop-blur-[30px] duration-1000 translate-x-[-2vw] translate-y-[-22vh] delay-[4.5s]">
                         Prodüksiyon
                     </div>
                 </div>
@@ -331,41 +323,41 @@
             </div>
         </div>
     </page>    <page page="6" pageName="Tasarım Bildirim Formu" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 !pb-0 duration-450 p-[--whiteSpace]">
-        <div titleFix class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-end gap-[50px] px-[120px]">
-            <div class="ease-manidar relative -top-full group-[&.active]/wrapper:top-0 duration-[2s] delay-1000 text-4xl 2xl:text-[30px] text-white/50 font-light">
+        <div titleFix class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[50px] px-[120px]">
+            <div class="ease-manidar relative top-0 group-[&.active]/wrapper:translate-y-0 -translate-y-[100vh] duration-[2s] delay-1000 text-4xl 2xl:text-[30px] text-white/50 font-light">
                 Projelere giden yolda, <strong class="text-white font-medium">detaylar bizim için önemli...</strong>
             </div>
-            <div class="ease-manidar relative bottom-0 translate-y-full group-[&.active]/wrapper:translate-y-0 duration-1000 delay-[1.5s]">
-                <a target="_blank" href="https://destek.pentayazilim.com/tasarim-bildirim-formu/mZDNCOTwvAqOI8Fm">
-                    <img class="w-[1000px] h-[600px]" src="assets/image/other/screen-2.png" alt="">
+            <div class="ease-manidar relative bottom-0 translate-y-[100vh] group-[&.active]/wrapper:translate-y-0 duration-1000 delay-[1.5s]">
+                <a class="flex bg-white/10 p-[10px] rounded-xl" target="_blank" href="https://destek.pentayazilim.com/tasarim-bildirim-formu/mZDNCOTwvAqOI8Fm">
+                    <img class="w-[1000px] rounded-xl" src="assets/image/other/screen-2.png" alt="">
                 </a>
             </div>
             <div titleFix class="absolute pointer-events-none top-0 left-0 w-full h-full">
-                <div class="scale-90 absolute bottom-[-300px] left-[50px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[15%]" style="transition-delay: 1s;">
+                <div class="scale-90 absolute bottom-[-100vh] left-[1vw] w-[10vw] text-center duration-[5s] group-[&.active]/wrapper:bottom-[1vh]" style="transition-delay: 1s;">
                     <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 0s;" src="assets/image/other/buble.png" alt="">
                     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">test yazusu</span>
                 </div>
-                <div class="absolute bottom-[-300px] left-[270px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[9%]" style="transition-delay: 1s;">
+                <div class="absolute bottom-[-100vh] left-[10vw] w-[10vw] text-center duration-[5s] group-[&.active]/wrapper:bottom-[25vh]" style="transition-delay: 1s;">
                     <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 0s;" src="assets/image/other/buble.png" alt="">
                     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Rakip Analizi</span>
                 </div>
-                <div class="absolute scale-125 left-[150px] bottom-[-300px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[35%]" style="transition-delay: 1.5s;">
+                <div class="absolute scale-125 left-[5vw] bottom-[-100vh] w-[11vw] text-center duration-[5s] group-[&.active]/wrapper:bottom-[45vh]" style="transition-delay: 1.5s;">
                     <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 2.5s;" src="assets/image/other/buble.png" alt="">
                     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Teknik Bilgiler</span>
                 </div>
-                <div class="absolute scale-90 left-[-70px] bottom-[-300px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[42%]" style="transition-delay: 2s;">
+                <div class="absolute scale-90 left-[-2vw] bottom-[-100vh] w-[10vw] text-center duration-[5s] group-[&.active]/wrapper:bottom-[60vh]" style="transition-delay: 2s;">
                     <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 3s;" src="assets/image/other/buble.png" alt="">
                     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Müşteri Analizi</span>
                 </div>
-                <div class="absolute bottom-[-300px] right-[80px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[11%]" style="transition-delay: 1s;">
+                <div class="absolute bottom-[-100vh] right-[1vw] w-[10vw] text-center duration-[5s] group-[&.active]/wrapper:bottom-[5vh]" style="transition-delay: 1s;">
                     <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 0s;" src="assets/image/other/buble.png" alt="">
                     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Beğeni Kriterleri</span>
                 </div>
-                <div class="scale-150 absolute right-[220px] bottom-[-300px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[31%]" style="transition-delay: 1.5s;">
+                <div class="scale-150 absolute right-[10vw] bottom-[-100vh] w-[11vw] text-center duration-[5s] group-[&.active]/wrapper:bottom-[35vh]" style="transition-delay: 1.5s;">
                     <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 2.5s;" src="assets/image/other/buble.png" alt="">
                     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Art Direktör Yorumu</span>
                 </div>
-                <div class="absolute right-[0px] bottom-[-300px] w-[200px] text-center duration-[5s] group-[&.active]/wrapper:bottom-[45%]" style="transition-delay: 2s;">
+                <div class="absolute right-[1vw] bottom-[-100vh] w-[10vw] text-center duration-[5s] group-[&.active]/wrapper:bottom-[60vh]" style="transition-delay: 2s;">
                     <img class="w-full animate-spin opacity-50" style="animation-duration: 20s; animation-delay: 3s;" src="assets/image/other/buble.png" alt="">
                     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Sektör Araştırması</span>
                 </div>
@@ -422,7 +414,7 @@
             </h3>
         </div>
     
-        <div id="cube" class="relative w-[70%] h-[500px] translate-y-[60%] [perspective:1000px] [transform-style:preserve-3d] opacity-0 group-[&.active]/wrapper:opacity-100 duration-[2s] delay-450 [transform:rotateX(90deg)] group-[&.active]/wrapper:rotate-0 ease-manidar">
+        <div id="cube" class="relative w-[70%] h-[50vh] translate-y-[60%] [perspective:1000px] [transform-style:preserve-3d] opacity-0 group-[&.active]/wrapper:opacity-100 duration-[2s] delay-450 [transform:rotateX(90deg)] group-[&.active]/wrapper:rotate-0 ease-manidar">
             <div class="absolute top-0 left-0 w-full h-full origin-top [transform:rotateX(50deg)_translateY(-100%)] mix-blend-screen [mask-image:linear-gradient(0deg,#000,transparent_80%)] bg-white/3">
                 <canvas font="30" speed="30" class="matrix absolute w-full h-full z-[10] bg-transparent"></canvas>
             </div>
@@ -439,12 +431,12 @@
         </div>
     </page>    <page page="9" pageName="Backend Kodlama İstasyonu" class="group/wrapper absolute z-[10] top-0 left-0 w-screen h-screen flex items-center justify-center !pt-0 duration-450 p-[--whiteSpace]">
         <div class="pointer-events-none absolute top-0 left-0 w-full h-full flex items-end justify-center">
-            <div class="scale-100 2xl:scale-100 translate-y-1/2 group-[&.active]/wrapper:translate-y-0 duration-1000 delay-500 ease-manidar absolute z-[0] -bottom-1/2 left-1/2 -translate-x-1/2">
-                <img class="w-full h-full animate-spin [animation-duration:50s]" src="assets/image/effects/wit.png" alt="">
+            <div class="scale-100 2xl:scale-100 translate-y-1/2 group-[&.active]/wrapper:translate-y-[-10vh] duration-1000 delay-500 ease-manidar absolute z-[0] -bottom-1/2 left-1/2 -translate-x-1/2">
+                <img class="w-[100vw] h-full animate-spin [animation-duration:50s]" src="assets/image/effects/wit.png" alt="">
+                <h3 class="w-[30vw] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-[calc(50%+10vh+80px)] duration-1000 delay-700 ease-manidar z-[1] flex items-center text-[70px] text-white text-center leading-none h-[400px]">
+                    İçeriğinizi Kolayca <br> Yönetin, Dijital Varlığınızı <br> Güçlendirin.
+                </h3>
             </div>
-            <h3 class="top-1/2 group-[&.active]/wrapper:!top-0 duration-1000 delay-700 ease-manidar  relative z-[1] flex items-center text-[70px] text-white text-center leading-none h-[400px]">
-                İçeriğinizi Kolayca <br> Yönetin, Dijital Varlığınızı <br> Güçlendirin.
-            </h3>
         </div>
         <div class="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 gap-[50px] pt-[300px] 2xl:pt-[100px]">
             <div class="opacity-0 top-1/2 group-[&.active]/wrapper:top-0 group-[&.active]/wrapper:opacity-100 duration-1000 group relative flex flex-col items-center justify-center gap-[20px] w-[200px] p-[20px] aspect-square" style="transform: translateY(100px) translateX(-20px); transition-delay: 1.5s;">
